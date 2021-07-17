@@ -4,6 +4,7 @@
 .topmenu-header h1 {
   font-size: var(--lumo-font-size-l);
   margin: 0;
+  padding-left: 20px;
 }
 .topmenu-header img#logo {
   height: var(--lumo-size-l);

@@ -79,18 +79,14 @@ public class MainLayout extends AppLayout {
     private HorizontalLayout createHeader() {
         HorizontalLayout layout = new HorizontalLayout();
         layout.setClassName("topmenu-header");
-        layout.setPadding(false);
+        layout.setPadding(true);
         layout.setSpacing(false);
         layout.setWidthFull();
         layout.setAlignItems(FlexComponent.Alignment.CENTER);
-        Image logo = new Image("images/logo.png", "LocoPoems logo");
-        logo.setId("logo");
-        layout.add(logo);
+        //Image logo = new Image("images/logo.png", "LocoPoems logo");
+        //logo.setId("logo");
+        //layout.add(logo);
         layout.add(new H1("LocoPoems"));
-
-        Avatar avatar = new Avatar();
-        avatar.addClassNames("ms-auto", "me-m");
-        layout.add(avatar);
 
         return layout;
     }
@@ -106,9 +102,9 @@ public class MainLayout extends AppLayout {
 
     private List<Tab> createMenuItems() {
         MenuItemInfo[] menuItems = new MenuItemInfo[]{ //
-                new MenuItemInfo("MainPage", "la la-file", MainPageView.class), //
+                new MenuItemInfo("Wiersze", "book", MainPageView.class), //
 
-                new MenuItemInfo("About", "la la-file", AboutView.class), //
+                new MenuItemInfo("O mnie", "User", AboutView.class), //
 
         };
         List<Tab> tabs = new ArrayList<>();
